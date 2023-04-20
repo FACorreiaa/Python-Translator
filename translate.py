@@ -2,6 +2,9 @@ import html
 import requests
 import xml.etree.ElementTree as ET
 import os
+import time
+
+start_time = time.time()
 
 # Set your subscription key and endpoint for the Azure Cognitive Services API
 subscription_key = os.environ.get('AZURE_TRANSLATION_KEY')
@@ -54,4 +57,5 @@ for i, translation in enumerate(root.findall('.//translation')):
 
 
 # Save the modified XML file
-tree.write('pt_PT-ui.ts')
+tree.write('pt_PT_translated.xml')
+print("--- Translation took %s seconds ---" % (time.time() - start_time))
