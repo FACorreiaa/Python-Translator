@@ -1,5 +1,3 @@
-# Python-Translator
-
 # Script to translate text from XML using Python and Azure Cognitive Services
 
 - Set API at https://learn.microsoft.com/en-us/azure/cognitive-services/translator/
