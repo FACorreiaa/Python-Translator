@@ -4,6 +4,6 @@
 
 - export AZURE_TRANSLATION_KEY="INSERT API KEY"
 
-- python3 install requests
+- pip3 install requests
 
 - python3 translate.py
